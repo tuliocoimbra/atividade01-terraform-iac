@@ -1,0 +1,20 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Variaveis sensiveis
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Arquivos do SO
+.DS_Store
+Thumbs.db
