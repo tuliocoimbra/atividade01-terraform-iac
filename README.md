@@ -1,8 +1,8 @@
 # Atividade 1 - Provisionamento de Infraestrutura Web na AWS com Terraform
 
-**Aluno:** Tulio Augusto Coimbra dos Santos
-**Turma:** Pos em DevOps 2025.2 - CESAR
-**Disciplina:** Fundamentos de Infraestrutura como Codigo
+**Aluno:** Túlio Augusto Coimbra dos Santos
+**Turma:** Pós em DevOps 2025.2 - CESAR
+**Disciplina:** Fundamentos de Infraestrutura como Código
 
 ---
 
