@@ -1,10 +1,10 @@
 # Atividade 1 - Provisionamento de Infraestrutura Web na AWS com Terraform
 
-**Aluno:** Túlio Augusto Coimbra dos Santos
+**Aluno:** Tulio Augusto Coimbra dos Santos
 
-**Turma:** Pós em DevOps 2025.2 - CESAR
+**Turma:** Pos em DevOps 2025.2 - CESAR
 
-**Disciplina:** Fundamentos de Infraestrutura como Código
+**Disciplina:** Fundamentos de Infraestrutura como Codigo
 
 ---
 
@@ -33,6 +33,7 @@ Este projeto provisiona na AWS a infraestrutura minima para hospedar uma pagina 
 ├── .gitignore                  # Ignora .terraform/, *.tfstate*, *.tfvars
 ├── .terraform.lock.hcl         # Lock de providers (versionado)
 ├── README.md                   # Este arquivo
+├── evidencias/                 # Prints das evidencias de execucao
 └── modules/
     └── servidor-web/
         ├── main.tf             # Security Group + EC2
@@ -173,9 +174,25 @@ As tags de todos os recursos incluem `Ambiente = terraform.workspace`, refletind
 
 ---
 
+## Evidencias
+
+A pasta `evidencias/` contem os prints que comprovam:
+
+- `terraform apply` com sucesso no workspace **dev** (Apply complete! Resources: 7 added)
+- `terraform apply` com sucesso no workspace **prod** (Apply complete! Resources: 7 added)
+- Pagina web funcionando no navegador (dev e prod), com IP visivel na barra de endereco
+- Instancias EC2 rodando no console AWS
+- Bucket S3 do backend remoto no console AWS
+- `terraform destroy` com sucesso em **dev** (Destroy complete! Resources: 7 destroyed)
+- `terraform destroy` com sucesso em **prod** (Destroy complete! Resources: 7 destroyed)
+
+---
+
 ## Validacao
 
 ```bash
 terraform fmt -check    # Verifica formatacao
 terraform validate      # Valida configuracao
 ```
+
+Ambos os comandos passam sem erros.
